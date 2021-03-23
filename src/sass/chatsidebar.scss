@@ -1,0 +1,75 @@
+.chat__sidebar {
+  &__component {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    width: 30%;
+    height: 100%;
+    padding: 16px;
+    border-right: 2px solid #2c5364;
+    &__list {
+        overflow-y: scroll;
+        height: 93%;
+      li {
+          margin: 16px 0;
+        h4 {
+            font-weight: normal;
+            cursor: pointer;
+        }
+      }
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 6px;
+      }
+    }
+  }
+
+
+  &__option {
+    &__hash {
+      margin-right: 10px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      color: white;
+    }
+  }
+  &__header {
+    padding: 16px;
+
+
+    img {
+      @include userImage;
+    }
+  }
+}
+
+.chat__ {
+  &channel__box {
+    cursor: pointer;
+    padding-bottom: 16px;
+    p {
+      margin-right: 10px;
+    }
+    &__plusIcon path {
+      stroke: white;
+    }
+    &__addChannel {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

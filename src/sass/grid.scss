@@ -1,0 +1,89 @@
+@media screen and (max-width: 912px) {
+  .header__component,
+  .chat {
+    &__body,
+    &__screen__component,
+    &__sidebar__component {
+      width: 100% !important;
+    }
+    &__input {
+      input {
+        width: 80%;
+      }
+    }
+    &__channel__box {
+      input {
+        width: 60vw;
+      }
+    }
+    &__login__card {
+      width: 90vw;
+      height: 60vh;
+    }
+  }
+  .menu__large-screen{
+    display: none;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+  form {
+    width: 90vw;
+    input, textarea {
+      width: 80vw;
+
+    }
+  }
+  .return__to__sidebar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    p {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-left: 6px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 913px) {
+  .largeScreenHidden {
+    display: none;
+
+  }
+  .chat {
+    &__sidebar__component {
+      width: 60vw;
+      margin: 0 auto;
+    }
+    &__screen__component {
+      margin: 0 auto;
+    }
+    &__channel__box {
+      input {
+        width: 30vw;
+      }
+    }
+    &__login__card {
+      width: 50vw;
+      height: 60vh;
+    }
+  }
+  .contact__component form {
+    width: 60%;
+    input, textarea {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

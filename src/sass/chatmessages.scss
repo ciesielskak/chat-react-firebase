@@ -1,0 +1,43 @@
+.chat__message {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  text-align: start;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px 25px 25px 35px;
+  color: white;
+  word-break: break-all;
+  margin: 1rem;
+  img {
+    @include userImage;
+
+  }
+  h4 {
+    font-weight: bold;
+
+  }
+  &__timestamp {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 300;
+  }
+  &__deleteBtn {
+    font-size: 2.3rem !important;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    path {
+      stroke: red;
+    }
+
+
+  }
+}
+.openFile {
+  text-decoration: underline;
+}
+.fileLink {
+  font-size: 0.9rem;
+}
