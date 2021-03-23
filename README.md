@@ -1,5 +1,4 @@
-My first React App project - a simple group chat with Firebase as my database.
-
+My first React App project - a simple group chat with Firebase as my database. 
 
 Functions :
 
@@ -9,6 +8,7 @@ Functions :
 * Context API + useReducer
 * Adding chat topics, sending and receiving messages with emojis, deleting messages, sending files all via Firebase/Firestore! 
 
+Styled with Sass! Used functional components! 😊
 
 
 
