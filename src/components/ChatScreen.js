@@ -6,6 +6,7 @@ import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ReactScrollableFeed from 'react-scrollable-feed';
 import { Message } from "./ChatMessages";
 import { ChatInput } from "./ChatInput";
+import { useHistory } from 'react-router';
 
 
 export const ChatScreen = () => {
@@ -52,6 +53,11 @@ export const ChatScreen = () => {
 
 
     }
+    const history = useHistory();
+    const changeRoute = () => {
+        history.push('/')
+    }
+
 
     const backToSidebar = () => {
         dispatch({
@@ -63,7 +69,6 @@ export const ChatScreen = () => {
         <>
             {roomId ?
                 <div className={sidebar ? 'chat__screen__component mobileHidden' : 'chat__screen__component'}>
-
                     <div className="chat__screen__header">
                         <div className="chat__screen__header__left">
                             <h4 className='chat__screen__header_channelName'>
@@ -71,7 +76,7 @@ export const ChatScreen = () => {
                             </h4>
                         </div>
                         <div className='chat__screen__header__right'>
-                            <div onClick={backToSidebar} className='return__to__sidebar largeScreenHidden'>
+                            <div onClick={() => {backToSidebar(); changeRoute();}} className='return__to__sidebar largeScreenHidden'>
                                 <ArrowBackIcon />
                                 <p>Wróć</p>
                             </div>

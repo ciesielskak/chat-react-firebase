@@ -1,38 +1,34 @@
 import React from 'react';
 import { ChatLogin } from "./components/ChatLogin";
-
+import { ChatHeader } from "./components/ChatHeader";
+import { ChatSidebar } from "./components/ChatSidebar";
 import { useStateValue } from "./Context-Reducer/StateProvider";
-import { ChatApp } from "./components/ChatApp";
+import { ChatScreen } from './components/ChatScreen';
 import './sass/index.scss'
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import  { BrowserRouter, Switch, Route } from "react-router-dom";
 
 export const App = () => {
     const [{ user }] = useStateValue();
 
     return (
         <>
-           <BrowserRouter>
-            { !user ? (
-
-                <ChatLogin />
-
-
-
-
-            ) : (
-
-
-
-                    <ChatApp />
-
-
-
-
-
-
-
-            )}
-           </BrowserRouter>
+          <BrowserRouter>
+          { !user ? (
+            <ChatLogin />
+                ) : (
+                <div className='chat__loggedin'>
+                    <ChatHeader />
+                    <div className="chat__sidebar__and__screen">
+                        <ChatSidebar />
+                        <Switch>
+                            <Route path='/:roomId?'>
+                                <ChatScreen />
+                            </Route>
+                        </Switch>
+                    </div>
+                </div>
+                    )}
+          </BrowserRouter>
         </>
     )
 }

@@ -4,13 +4,14 @@ import { useStateValue } from "../Context-Reducer/StateProvider";
 import auth from "../firebase/firebase";
 import Avatar from "@material-ui/core/Avatar";
 
-
 export const ChatHeader = () => {
     const history = useHistory();
 
     const backToLogin  = () => {
 
-        history.push('/')
+        history.push('/');
+
+
     }
     const [state, dispatch] = useStateValue();
     const {user, searchInput} = state;
@@ -23,7 +24,11 @@ export const ChatHeader = () => {
                 type: 'setUser',
                 user: null
             })
-
+        })
+        .then(() => {
+            dispatch({
+                type: 'showSidebar'
+            })
         })
             .catch((error) => {
                 alert(error.message)
