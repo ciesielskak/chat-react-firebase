@@ -10,6 +10,7 @@ import { useStateValue } from "../Context-Reducer/StateProvider";
 export const ChatLogin = () => {
     const [state, dispatch] = useStateValue();
     const {user, screen, sidebar} = state;
+
     const SignInWithGoogle = () => {
         auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL)
             .then(() => {

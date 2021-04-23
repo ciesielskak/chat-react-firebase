@@ -5,10 +5,9 @@
 /.pnp
 .pnp.js
 /.idea
-/src/firebase
 # testing
 /coverage
-
+/.env
 # production
 /build
 

@@ -16,7 +16,7 @@ export const Message = ({message, timestamp, username, userimage, id, removeMsg,
                 {file &&
                 <>
                     <p className='openFile'>Otwórz plik:</p>
-                    <a className='fileLink' href={file} target='_blank'>{file}</a>
+                    <a className='fileLink' rel='noreferrer' href={file} target='_blank'>{file}</a>
                 </>
                 }
 
