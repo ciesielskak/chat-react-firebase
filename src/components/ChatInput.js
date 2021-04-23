@@ -30,8 +30,7 @@ export const ChatInput = ({ channelName, channelId }) => {
                 })
 
         }
-        setInput('')
-
+        setInput('');
     }
 
     const addEmoji = e => {
