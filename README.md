@@ -1,6 +1,6 @@
 # *React App* group chat using Firebase 
 
-## **Checkout live at:** https://zealous-lewin-befda0.netlify.app
+## **Check out at:** https://zealous-lewin-befda0.netlify.app
 
 Functions :
 
