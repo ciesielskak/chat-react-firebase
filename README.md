@@ -1,6 +1,6 @@
 My first *React App* project - a simple group chat with Firebase as my database. 
 
-**Checkout live at:**
+## **Checkout live at:**
 https://zealous-lewin-befda0.netlify.app
 
 Functions :
