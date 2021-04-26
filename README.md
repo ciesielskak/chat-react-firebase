@@ -1,4 +1,4 @@
-My first *React App* project - a simple group chat with Firebase as my database. 
+# *React App*group chat using Firebase 
 
 ## **Checkout live at:**
 https://zealous-lewin-befda0.netlify.app
